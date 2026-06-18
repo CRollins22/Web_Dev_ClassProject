@@ -1,0 +1,77 @@
+/* =====================
+   Zazu's Coffee — Main Stylesheet
+   ===================== */
+
+/* === Colour Variables === */
+:root {
+  --zazu-brown: #4e2c0e;
+  --zazu-gold:  #c9973b;
+  --zazu-cream: #fdf6ec;
+  --zazu-dark:  #1a1a1a;
+}
+
+/* === Base === */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff;
+  color: var(--zazu-dark);
+}
+
+/* === Navbar Brand === */
+.navbar-brand {
+  font-size: 1.4rem;
+  color: var(--zazu-gold) !important;
+}
+
+/* === Logo Images === */
+.logo-img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.footer-logo-img {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+}
+
+/* === Hero Section === */
+.hero-section {
+  min-height: 85vh;
+  background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+              url('../assets/images/hero-bg.jpg') center/cover no-repeat;
+  background-color: var(--zazu-brown); /* fallback if image missing */
+}
+
+/* === Buttons === */
+.btn-warning {
+  background-color: var(--zazu-gold);
+  border-color: var(--zazu-gold);
+  color: #fff;
+  font-weight: 600;
+}
+
+.btn-warning:hover {
+  background-color: var(--zazu-brown);
+  border-color: var(--zazu-brown);
+  color: #fff;
+}
+
+/* === Cards === */
+.card {
+  border: none;
+  border-radius: 12px;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+/* === Footer === */
+footer {
+  background-color: var(--zazu-dark) !important;
+  font-size: 0.9rem;
+}
