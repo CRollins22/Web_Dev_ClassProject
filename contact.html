@@ -31,10 +31,51 @@
     </div>
   </nav>
 
-  <main class="container py-5 text-center">
-    <h1>Contact</h1>
-    <p class="text-muted">Content coming in the next milestone.</p>
-  </main>
+  <section class="py-5">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h1 class="fw-bold">Get in Touch</h1>
+      <p class="text-muted">Have a question, feedback or a bulk order enquiry? We'd love to hear from you.</p>
+    </div>
+    <div class="row g-5">
+      <div class="col-lg-7">
+        <form id="contactForm" novalidate>
+          <div class="mb-3">
+            <label for="fullName" class="form-label fw-bold">Full Name</label>
+            <input type="text" class="form-control" id="fullName" placeholder="e.g. Brian Mutua" />
+            <div class="invalid-feedback">Please enter your name.</div>
+          </div>
+          <div class="mb-3">
+            <label for="emailAddress" class="form-label fw-bold">Email Address</label>
+            <input type="email" class="form-control" id="emailAddress" placeholder="e.g. brian@example.com" />
+            <div class="invalid-feedback">Please enter a valid email address.</div>
+          </div>
+          <div class="mb-3">
+            <label for="subject" class="form-label fw-bold">Subject</label>
+            <input type="text" class="form-control" id="subject" placeholder="e.g. Bulk coffee order enquiry" />
+            <div class="invalid-feedback">Please enter a subject.</div>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label fw-bold">Message</label>
+            <textarea class="form-control" id="message" rows="5" placeholder="Tell us how we can help..."></textarea>
+            <div class="invalid-feedback">Please enter your message.</div>
+          </div>
+          <button type="submit" class="btn btn-warning w-100 fw-bold py-2">Send Message</button>
+          <div id="formSuccess" class="alert alert-success mt-3 d-none">Your message has been sent! We will be in touch shortly.</div>
+        </form>
+      </div>
+      <div class="col-lg-5">
+        <div class="p-4 bg-light rounded">
+          <h4 class="fw-bold mb-4">Contact Details</h4>
+          <p><strong> Head Office</strong><br>Zazu's Coffee, Westlands<br>Nairobi, Kenya</p>
+          <p><strong> Phone</strong><br>+254 712 345 678</p>
+          <p><strong> Email</strong><br>hello@zazuscoffee.co.ke</p>
+          <p class="mb-0"><strong>🕒 Opening Hours</strong><br>Monday – Friday: 6:30am – 9:00pm<br>Saturday – Sunday: 7:00am – 10:00pm</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
   <footer class="bg-dark text-white text-center py-4">
     <div class="container">
