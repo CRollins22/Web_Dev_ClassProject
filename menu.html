@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Zazu's Coffee | Menu</title>
+  <meta name="description" content="Learn about Zazu's Coffee — our story, values and the Nairobi team behind every cup." />
+  <title>Zazu's Coffee | About</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="css/stylesheet.css" />
 </head>
@@ -20,8 +21,8 @@
       <div class="collapse navbar-collapse" id="mainNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link active" href="menu.html">Menu</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+          <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
           <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
           <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
           <li class="nav-item"><a class="nav-link" href="locations.html">Locations</a></li>
@@ -34,152 +35,86 @@
 
   <section class="page-hero d-flex align-items-center text-white">
     <div class="container">
-      <h1 class="display-5 fw-bold">Our Menu</h1>
-      <p class="lead mb-0">Crafted with Kenya's finest beans. All prices in KES.</p>
+      <h1 class="display-5 fw-bold">About Us</h1>
+      <p class="lead mb-0">Our story, our values, our team.</p>
+    </div>
+  </section>
+
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <h2 class="fw-bold mb-3">Our Story</h2>
+          <p class="text-muted">Zazu's Coffee was founded in 2018 by Amara Odhiambo, a Nairobi-born barista who spent five years honing her craft in specialty coffee shops across Europe before returning home with one goal: to create a world-class coffee experience rooted in Kenyan heritage.</p>
+          <p class="text-muted">What started as a single 12-seater café in Westlands has grown into four branches across Nairobi. Every cup we serve traces its journey back to the highlands of Nyeri and Kirinyaga — farms we visit personally, farmers we know by name.</p>
+          <a href="locations.html" class="btn btn-warning mt-2">Find a Branch</a>
+        </div>
+        <div class="col-lg-6">
+          <div class="rounded" style="height:350px;background-color:var(--zazu-brown);opacity:0.15;"></div>
+        </div>
+      </div>
     </div>
   </section>
 
   <section class="py-5">
-    <div class="container">
-      <div class="d-flex justify-content-center flex-wrap gap-2 mb-5">
-        <button class="btn filter-btn active" data-filter="all">All</button>
-        <button class="btn filter-btn" data-filter="hot">Hot Drinks</button>
-        <button class="btn filter-btn" data-filter="cold">Cold Drinks</button>
-        <button class="btn filter-btn" data-filter="food">Food</button>
-      </div>
+    <div class="container text-center">
+      <h2 class="fw-bold mb-2">What We Stand For</h2>
+      <p class="text-muted mb-5">Three values that guide everything we do.</p>
       <div class="row g-4">
-        <div class="col-md-4 menu-item" data-category="hot">
-          <div class="card h-100 shadow-sm">
+        <div class="col-md-4">
+          <div class="p-4 border rounded h-100">
+            <h4 class="fw-bold mb-3">Quality First</h4>
+            <p class="text-muted">We never compromise on our beans, our roasts or our brewing methods. Every cup must meet the Zazu's standard before it reaches your hands.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-4 border rounded h-100">
+            <h4 class="fw-bold mb-3">Community Roots</h4>
+            <p class="text-muted">We reinvest in the farming communities that make our coffee possible — through fair pay, training programmes and long-term partnerships.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-4 border rounded h-100">
+            <h4 class="fw-bold mb-3">Sustainable Futures</h4>
+            <p class="text-muted">From biodegradable packaging to solar-powered roasting, we are committed to leaving a lighter footprint on Nairobi and Kenya.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="fw-bold mb-2">Meet the Team</h2>
+      <p class="text-muted mb-5">The people behind every great cup.</p>
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm h-100">
             <div class="card-body p-4">
-              <h5 class="fw-bold">Kenyan AA Espresso</h5>
-              <p class="text-muted small">A bold, fruity single shot sourced from Kirinyaga highlands.</p>
-              <p class="fw-bold mb-0" style="color:var(--zazu-gold);">KES 250</p>
+              <div class="rounded-circle mx-auto mb-3" style="width:80px;height:80px;background-color:var(--zazu-brown);opacity:0.2;"></div>
+              <h5 class="fw-bold">Amara Odhiambo</h5>
+              <p class="fw-bold mb-2" style="color:var(--zazu-gold);">Founder & Head Roaster</p>
+              <p class="text-muted small">A Nairobi native with a European-trained palate and a passion for Kenyan single-origin beans.</p>
             </div>
           </div>
         </div>
-        <div class="col-md-4 menu-item" data-category="hot">
-          <div class="card h-100 shadow-sm">
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm h-100">
             <div class="card-body p-4">
-              <h5 class="fw-bold">Cappuccino</h5>
-              <p class="text-muted small">Espresso topped with equal parts steamed milk and silky foam.</p>
-              <p class="fw-bold mb-0" style="color:var(--zazu-gold);">KES 320</p>
+              <div class="rounded-circle mx-auto mb-3" style="width:80px;height:80px;background-color:var(--zazu-brown);opacity:0.2;"></div>
+              <h5 class="fw-bold">Brian Mutua</h5>
+              <p class="fw-bold mb-2" style="color:var(--zazu-gold);">Head Barista</p>
+              <p class="text-muted small">Six-time regional barista champion with an obsession for latte art and perfect extraction timing.</p>
             </div>
           </div>
         </div>
-        <div class="col-md-4 menu-item" data-category="hot">
-          <div class="card h-100 shadow-sm">
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm h-100">
             <div class="card-body p-4">
-              <h5 class="fw-bold">Flat White</h5>
-              <p class="text-muted small">Double ristretto with microfoam milk — smooth and intense.</p>
-              <p class="fw-bold mb-0" style="color:var(--zazu-gold);">KES 350</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 menu-item" data-category="hot">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body p-4">
-              <h5 class="fw-bold">Spiced Chai Latte</h5>
-              <p class="text-muted small">Kenyan black tea with ginger, cardamom and steamed milk.</p>
-              <p class="fw-bold mb-0" style="color:var(--zazu-gold);">KES 300</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 menu-item" data-category="hot">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body p-4">
-              <h5 class="fw-bold">Americano</h5>
-              <p class="text-muted small">Espresso diluted with hot water for a long, clean cup.</p>
-              <p class="fw-bold mb-0" style="color:var(--zazu-gold);">KES 280</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 menu-item" data-category="hot">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body p-4">
-              <h5 class="fw-bold">Hot Chocolate</h5>
-              <p class="text-muted small">Rich dark cocoa with steamed whole milk and whipped cream.</p>
-              <p class="fw-bold mb-0" style="color:var(--zazu-gold);">KES 330</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 menu-item" data-category="cold">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body p-4">
-              <h5 class="fw-bold">Cold Brew Blend</h5>
-              <p class="text-muted small">Slow-steeped for 18 hours. Smooth, bold and refreshing.</p>
-              <p class="fw-bold mb-0" style="color:var(--zazu-gold);">KES 350</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 menu-item" data-category="cold">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body p-4">
-              <h5 class="fw-bold">Iced Latte</h5>
-              <p class="text-muted small">Espresso over ice with your choice of whole or oat milk.</p>
-              <p class="fw-bold mb-0" style="color:var(--zazu-gold);">KES 370</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 menu-item" data-category="cold">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body p-4">
-              <h5 class="fw-bold">Passion Fruit Frappé</h5>
-              <p class="text-muted small">Blended Kenyan passion fruit, ice and a hint of vanilla cream.</p>
-              <p class="fw-bold mb-0" style="color:var(--zazu-gold);">KES 420</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 menu-item" data-category="cold">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body p-4">
-              <h5 class="fw-bold">Iced Americano</h5>
-              <p class="text-muted small">Double espresso over ice. Clean, crisp and no-nonsense.</p>
-              <p class="fw-bold mb-0" style="color:var(--zazu-gold);">KES 300</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 menu-item" data-category="food">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body p-4">
-              <h5 class="fw-bold">Butter Croissant</h5>
-              <p class="text-muted small">Freshly baked every morning. Flaky, golden and perfectly buttered.</p>
-              <p class="fw-bold mb-0" style="color:var(--zazu-gold);">KES 180</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 menu-item" data-category="food">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body p-4">
-              <h5 class="fw-bold">Mandazi & Chai</h5>
-              <p class="text-muted small">House-made mandazi served warm with a side of spiced chai.</p>
-              <p class="fw-bold mb-0" style="color:var(--zazu-gold);">KES 220</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 menu-item" data-category="food">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body p-4">
-              <h5 class="fw-bold">Avocado Toast</h5>
-              <p class="text-muted small">Sourdough topped with smashed avocado, chilli flakes and lemon.</p>
-              <p class="fw-bold mb-0" style="color:var(--zazu-gold);">KES 450</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 menu-item" data-category="food">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body p-4">
-              <h5 class="fw-bold">Banana Bread</h5>
-              <p class="text-muted small">Moist, homemade banana bread with a honey walnut glaze.</p>
-              <p class="fw-bold mb-0" style="color:var(--zazu-gold);">KES 200</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 menu-item" data-category="food">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body p-4">
-              <h5 class="fw-bold">Club Sandwich</h5>
-              <p class="text-muted small">Triple-decker with chicken, egg, lettuce and tomato on toasted bread.</p>
-              <p class="fw-bold mb-0" style="color:var(--zazu-gold);">KES 550</p>
+              <div class="rounded-circle mx-auto mb-3" style="width:80px;height:80px;background-color:var(--zazu-brown);opacity:0.2;"></div>
+              <h5 class="fw-bold">Zawadi Njeri</h5>
+              <p class="fw-bold mb-2" style="color:var(--zazu-gold);">Operations Manager</p>
+              <p class="text-muted small">Keeps all four Nairobi branches running smoothly while ensuring every customer leaves satisfied.</p>
             </div>
           </div>
         </div>
