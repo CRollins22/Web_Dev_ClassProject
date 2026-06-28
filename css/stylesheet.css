@@ -71,6 +71,25 @@ footer {
   font-size: 0.9rem;
 }
 
+footer p,
+footer small,
+footer li,
+footer h6 {
+  color: #ccc !important;
+}
+
+footer a {
+  color: #bbb !important;
+}
+
+footer a:hover {
+  color: #fff !important;
+}
+
+footer hr {
+  border-color: #444 !important;
+}
+
 .filter-btn {
   background-color: transparent;
   border: 2px solid var(--zazu-brown);
