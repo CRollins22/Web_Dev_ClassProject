@@ -74,11 +74,14 @@ footer {
 footer p,
 footer small,
 footer li,
-footer h6 {
-  color: #ccc !important;
+footer h6,
+footer .text-muted,
+footer a.text-muted {
+  color: #bbb !important;
 }
 
-footer a {
+footer a,
+footer a.text-decoration-none {
   color: #bbb !important;
 }
 
