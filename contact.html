@@ -27,64 +27,94 @@
           <li class="nav-item"><a class="nav-link" href="locations.html">Locations</a></li>
           <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
         </ul>
+        <button id="darkModeToggle" class="btn btn-sm ms-lg-3 mt-2 mt-lg-0" style="background:none;border:none;color:var(--zazu-gold);font-size:1.2rem;">Dark</button>
       </div>
     </div>
   </nav>
 
-  <section class="py-5">
-  <div class="container">
-    <div class="text-center mb-5">
-      <h1 class="fw-bold">Get in Touch</h1>
-      <p class="text-muted">Have a question, feedback or a bulk order enquiry? We'd love to hear from you.</p>
+  <section class="page-hero d-flex align-items-center text-white">
+    <div class="container">
+      <h1 class="display-5 fw-bold">Get in Touch</h1>
+      <p class="lead mb-0">We'd love to hear from you.</p>
     </div>
-    <div class="row g-5">
-      <div class="col-lg-7">
-        <form id="contactForm" novalidate>
-          <div class="mb-3">
-            <label for="fullName" class="form-label fw-bold">Full Name</label>
-            <input type="text" class="form-control" id="fullName" placeholder="e.g. Brian Mutua" />
-            <div class="invalid-feedback">Please enter your name.</div>
+  </section>
+
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-7">
+          <form id="contactForm" novalidate>
+            <div class="mb-3">
+              <label for="fullName" class="form-label fw-bold">Full Name</label>
+              <input type="text" class="form-control" id="fullName" placeholder="e.g. Brian Mutua" />
+              <div class="invalid-feedback">Please enter your name.</div>
+            </div>
+            <div class="mb-3">
+              <label for="emailAddress" class="form-label fw-bold">Email Address</label>
+              <input type="email" class="form-control" id="emailAddress" placeholder="e.g. brian@example.com" />
+              <div class="invalid-feedback">Please enter a valid email address.</div>
+            </div>
+            <div class="mb-3">
+              <label for="subject" class="form-label fw-bold">Subject</label>
+              <input type="text" class="form-control" id="subject" placeholder="e.g. Bulk coffee order enquiry" />
+              <div class="invalid-feedback">Please enter a subject.</div>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label fw-bold">Message</label>
+              <textarea class="form-control" id="message" rows="5" placeholder="Tell us how we can help..."></textarea>
+              <div class="invalid-feedback">Please enter your message.</div>
+            </div>
+            <button type="submit" class="btn btn-warning w-100 fw-bold py-2">Send Message</button>
+            <div id="formSuccess" class="alert alert-success mt-3 d-none">Your message has been sent! We will be in touch shortly.</div>
+          </form>
+        </div>
+        <div class="col-lg-5">
+          <div class="p-4 bg-light rounded">
+            <h4 class="fw-bold mb-4">Contact Details</h4>
+            <p><strong>Address</strong><br>Zazu's Coffee, Westlands<br>Nairobi, Kenya</p>
+            <p><strong>Phone</strong><br>+254 712 345 678</p>
+            <p><strong>Email</strong><br>hello@zazuscoffee.co.ke</p>
+            <p class="mb-0"><strong>Opening Hours</strong><br>Monday – Friday: 6:30am – 9:00pm<br>Saturday – Sunday: 7:00am – 10:00pm</p>
           </div>
-          <div class="mb-3">
-            <label for="emailAddress" class="form-label fw-bold">Email Address</label>
-            <input type="email" class="form-control" id="emailAddress" placeholder="e.g. brian@example.com" />
-            <div class="invalid-feedback">Please enter a valid email address.</div>
-          </div>
-          <div class="mb-3">
-            <label for="subject" class="form-label fw-bold">Subject</label>
-            <input type="text" class="form-control" id="subject" placeholder="e.g. Bulk coffee order enquiry" />
-            <div class="invalid-feedback">Please enter a subject.</div>
-          </div>
-          <div class="mb-3">
-            <label for="message" class="form-label fw-bold">Message</label>
-            <textarea class="form-control" id="message" rows="5" placeholder="Tell us how we can help..."></textarea>
-            <div class="invalid-feedback">Please enter your message.</div>
-          </div>
-          <button type="submit" class="btn btn-warning w-100 fw-bold py-2">Send Message</button>
-          <div id="formSuccess" class="alert alert-success mt-3 d-none">Your message has been sent! We will be in touch shortly.</div>
-        </form>
-      </div>
-      <div class="col-lg-5">
-        <div class="p-4 bg-light rounded">
-          <h4 class="fw-bold mb-4">Contact Details</h4>
-          <p><strong> Head Office</strong><br>Zazu's Coffee, Westlands<br>Nairobi, Kenya</p>
-          <p><strong> Phone</strong><br>+254 712 345 678</p>
-          <p><strong> Email</strong><br>hello@zazuscoffee.co.ke</p>
-          <p class="mb-0"><strong> Opening Hours</strong><br>Monday – Friday: 6:30am – 9:00pm<br>Saturday – Sunday: 7:00am – 10:00pm</p>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-  <footer class="bg-dark text-white text-center py-4">
+  <footer class="bg-dark text-white py-5">
     <div class="container">
-      <img src="images/logo.png" alt="Zazu's Coffee logo" class="footer-logo-img mb-2" width="48" height="48" />
-      <p class="mb-1">Zazu's Coffee — Nairobi, Kenya</p>
-      <small>&copy; 2026 Zazu's Coffee. All rights reserved.</small>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <img src="images/logo.png" alt="Zazu's Coffee logo" class="footer-logo-img mb-3" width="48" height="48" />
+          <p class="text-muted small">Nairobi's home for specialty coffee, rooted in Kenyan heritage and crafted with care since 2018.</p>
+        </div>
+        <div class="col-md-4">
+          <h6 class="fw-bold mb-3">Quick Links</h6>
+          <ul class="list-unstyled">
+            <li class="mb-1"><a href="index.html" class="text-muted text-decoration-none small">Home</a></li>
+            <li class="mb-1"><a href="menu.html" class="text-muted text-decoration-none small">Menu</a></li>
+            <li class="mb-1"><a href="about.html" class="text-muted text-decoration-none small">About</a></li>
+            <li class="mb-1"><a href="gallery.html" class="text-muted text-decoration-none small">Gallery</a></li>
+            <li class="mb-1"><a href="blog.html" class="text-muted text-decoration-none small">Blog</a></li>
+            <li class="mb-1"><a href="locations.html" class="text-muted text-decoration-none small">Locations</a></li>
+            <li class="mb-1"><a href="contact.html" class="text-muted text-decoration-none small">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h6 class="fw-bold mb-3">Contact Us</h6>
+          <p class="text-muted small mb-1">Westlands, Nairobi, Kenya</p>
+          <p class="text-muted small mb-1">Tel: +254 712 345 678</p>
+          <p class="text-muted small mb-3">hello@zazuscoffee.co.ke</p>
+          <p class="text-muted small mb-1">Mon–Fri: 6:30am – 9:00pm</p>
+          <p class="text-muted small mb-0">Sat–Sun: 7:00am – 10:00pm</p>
+        </div>
+      </div>
+      <hr class="border-secondary mt-4" />
+      <p class="text-muted small text-center mb-0">&copy; 2026 Zazu's Coffee. All rights reserved.</p>
     </div>
   </footer>
 
+  <button id="backToTop" class="back-to-top">↑</button>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/main.js"></script>
 </body>
